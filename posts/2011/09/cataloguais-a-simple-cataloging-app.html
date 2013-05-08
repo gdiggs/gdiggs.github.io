@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Gordon Diggs - Blog</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/10/recipe-slow-cooker-chili.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/09/welcome.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Cataloguais - a simple cataloging app</h3>
+<div class='post_info'>
+<span class='post_time'>September 25 2011,  5:44 PM</span>
+<span class='author'>&nbsp;by Gordon Diggs</span>
+</div>
+</div>
+<div class='post_body'><p>So, as I started collecting vinyls recently, I needed a good way to keep track of them all. Not satisfied with a simple Google Spreadsheet and always looking for interesting programming problems, I decided to roll my own solution. Here were my requirements</p>
+<ul>
+<li><strong>Simple (as always)</strong>: I wanted the collection to be displayed in an easy-to-follow table, and adding/editing items should be a simple process.</li>
+<li><strong>Fluid Schema</strong>: if I want to add/remove attributes, I should be able to do that</li>
+<li><strong>Public</strong>: I want to be able to share this collection without worry or fear of other people messing with it without permission.</li>
+</ul>
+<p>Enter <a href="https://github.com/GordonDiggs/cataloguais" target="_blank">cataloguais</a>. Built on Sinatra, MongoDB and jQuery, cataloguais is basically exactly what I wanted. This is not my first time working with Sinatra or jQuery, but my first foray into MongoDB. MongoDB gets a lot of flak, but I think this is a good use-case for it. Its in-memory, fluid schema architecture lends itself well to my collection of all-string objects. Plus, MongoMapper makes it easy to manipulate and fetch objects, adding a lot of methods I'm used to using with Rails.</p>
+<p>It was an interesting task writing something that I'm going to use specifically to be designed for more general use cases. I wanted to write code that anyone could use to keep track of their collection. Thus, the schema is specified in a settings.yml file and applied each time the app spins up.</p>
+<p>To be honest, I'm not exactly happy with the authentication as it stands. It's a plain-text string comparison. I'm thinking of moving over to an Oauth setup/administration, which could be cool. The lock works on a really simple level as-is for now.</p>
+<p>All in all, cataloguais has managed to fullfill my needs really well. Check out the code on <a href="https://github.com/GordonDiggs/cataloguais">github</a>&nbsp;and see it in action <a href="http://vinyl.gordondiggs.com">here</a>.</p>
+<p><em>A cause de ma nouvelle collection des disques, j'avais besoin d'un bon fa&ccedil;on &agrave; les cataloguer. Je n'&eacute;tais pas satisfait de Google Spreadsheet et parce que je toujours cherches des probl&egrave;mes interessantes de la programmation, j'ai decid&eacute; &agrave; faire une solution moi-m&ecirc;me. Mes besoins &eacute;taient:</em></p>
+<ul>
+<li><em><strong>Simple (comme toujours)</strong>: Je voulais que la collection serait montr&eacute;e dans une table simple, et ajouter/supprimer des chose doivent &ecirc;tre facile.</em></li>
+<li><em><strong>Sch&eacute;ma liquide</strong>: Si on veut ajouter/supprimer des attributs, on doit pouvoir le faire.</em></li>
+<li><em><strong>Public:</strong>&nbsp;Je veut montret ma collection sans peur que des gens traficoteraient.</em></li>
+</ul>
+<p><em>Voila <a href="https://github.com/GordonDiggs/cataloguais">cataloguais</a>. Utilisant Sinatra, MongoDB et jQuery, cataloguais est exactement dont j'avais besoin. Ce n'est pas ma premi&eacute;re exp&eacute;rience avec Sinatra ou jQuery, mais c'est ma premi&eacute;re avec MongoDB. MongoDB re&ccedil;oit beaucoup de critiques, mais je pense que ce soit un bon emploi de lui. Son in-memory, sch&eacute;ma liquide architecture se conf&egrave;re &agrave; ma collection des strings. Plus, MongoMapper la rend facile &agrave; changer des objets, avec beaucoup de m&eacute;thodes avec qui je suis familier &agrave; cause de Rails.</em></p>
+<p><em>C'&eacute;tait interessant &agrave; ecrire quelque chose pour moi-m&ecirc;me qui doit &ecirc;tre g&eacute;n&eacute;ral aussi. J'ai voulu &eacute;crire du code pour permettre n'importe qui &agrave; cataloguer leur collection. Donc, le sch&eacute;ma est sp&eacute;cifi&eacute; dans un fichier settings.yml et appliqu&eacute; chaque fois l'application commence.</em></p>
+<p><em>Etre franc, je ne suis pas content avec l'authentication comme elle est maintenant. C'est une comparasion du texte. Je pense d'utiliser Oauth. Mais l'authentication marche pour maintenant.</em></p>
+<p><em>Cataloguais me suffit exactement. Voila le code sur <a href="https://github.com/GordonDiggs/cataloguais">github</a> et le produi <a href="http://vinyl.gordondiggs.com">ici</a>.</em></p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>programming</div>
+</div>
+<div class='post_responses'>
+<h4>260 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
